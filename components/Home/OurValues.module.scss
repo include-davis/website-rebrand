@@ -2,11 +2,6 @@
   background-color: #242a44;
   padding: 76px 78px 93px;
   text-align: center;
-}
-
-#container {
-  width: clamp(200px, 90vw, 1284px);
-  margin: auto;
 
   > h2 {
     font-family: "Work Sans";
@@ -21,22 +16,31 @@
   > hr {
     width: 110px;
     margin: auto auto 54px;
-    border: 4px solid #E6BDC3;
+    border: 4px solid #e6bdc3;
   }
 }
 
-#cardBox {
+#container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
+  width: 90%;
+  max-width: 1284px;
+  margin: -40px auto 0;
+
+  > div {
+    flex: 1 0 33%;
+    padding: 0 5px;
+  }
 }
 
 .card {
   background-color: #bac2e8;
-  flex-basis: 396px;
+  width: 396px;
   padding: 84px 66px 59px;
   border-radius: 20px;
+  margin: 40px auto 0;
 
   > h3 {
     font-family: "Roboto Mono";

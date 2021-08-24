@@ -24,24 +24,24 @@ const Values: Value[] = [
 
 const Card = ({ name, img }: Value) => {
   return (
-    <article className={styles.card} key={name}>
-      <h3>{name}</h3>
-      <img src={img} alt="" />
-    </article>
+    <div>
+      <article className={styles.card} key={name}>
+        <h3>{name}</h3>
+        <img src={img} alt="" />
+      </article>
+    </div>
   )
 }
 
 const OurValues = () => {
   return (
-    <div id={styles.background}>
-      <section id={styles.container}>
-        <h2>Our Values</h2>
-        <hr />
-        <div id={styles.cardBox}>
-          {Values.map(Card)}
-        </div>
-      </section>
-    </div>
+    <section id={styles.background}>
+      <h2>Our Values</h2>
+      <hr />
+      <div id={styles.container}>
+        {Values.map(Card)}
+      </div>
+    </section>
   )
 }
 
