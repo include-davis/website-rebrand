@@ -24,7 +24,7 @@ const Values: Value[] = [
 
 const Card = ({ name, img }: Value) => {
   return (
-    <article className={styles.card}>
+    <article className={styles.card} key={name}>
       <h3>{name}</h3>
       <img src={img} alt="" />
     </article>
