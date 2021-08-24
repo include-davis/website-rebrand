@@ -29,7 +29,8 @@
     text-decoration: none;
     
     &.selected {
-      border-bottom: 3px solid black;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #BAC2E8;
     }
   }
 }
