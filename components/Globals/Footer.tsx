@@ -1,8 +1,11 @@
 import styles from './Footer.module.scss'
 
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Footer = () => {
+  const { pathname } = useRouter()
+
   return (
     <footer id={styles.background}>
       <div id={styles.topRow}>
@@ -13,24 +16,24 @@ const Footer = () => {
         <div id={styles.navigation}>
           <div>
             <Link href="/">
-              <a>Home</a>
+              <a className={pathname === "/" ? styles.selected : undefined}>Home</a>
             </Link>
             <Link href="/about">
-              <a>About</a>
+              <a className={pathname === "/about" ? styles.selected : undefined}>About</a>
             </Link>
             <Link href="/projects">
-              <a>Projects</a>
+              <a className={pathname === "/projects" ? styles.selected : undefined}>Projects</a>
             </Link>
           </div>
           <div>
             <Link href="/events">
-              <a>Events</a>
+              <a className={pathname === "/events" ? styles.selected : undefined}>Events</a>
             </Link>
             <Link href="resources">
-              <a>Resources</a>
+              <a className={pathname === "/resources" ? styles.selected : undefined}>Resources</a>
             </Link>
             <Link href="/contact-us">
-              <a>Contact Us</a>
+              <a className={pathname === "/contact-us" ? styles.selected : undefined}>Contact Us</a>
             </Link>
           </div>
         </div>

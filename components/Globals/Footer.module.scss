@@ -71,6 +71,10 @@
       letter-spacing: 0.03em;
       color: #ffffff;
       margin-top: 8px;
+
+      &.selected {
+        font-weight: 600;
+      }
     }
   }
 }
