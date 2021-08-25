@@ -1,0 +1,126 @@
+#background {
+  background-color: #242a44;
+  padding: 61px 0 34px;
+
+  > hr {
+    width: 90%;
+    max-width: 630px;
+    border: 1px solid #ffffff;
+    margin: 40px auto;
+  }
+
+  > p {
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+}
+
+#topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 95%;
+  max-width: 1260px;
+}
+
+#slogan {
+  > h2 {
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 92px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+
+  > p {
+    font-family: Work Sans;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 255px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: -8px;
+    height: 102px;
+
+    > a {
+      text-decoration: none;
+      font-family: Work Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+      margin-top: 8px;
+    }
+  }
+}
+
+#newsletter {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 10px;
+
+  > label {
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-bottom: 17px;
+  }
+
+  > input {
+    font-family: "Work Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    padding: 11px 20px 15px;
+    border-radius: 20px;
+    
+    &::placeholder {
+      color: #bac2e8;
+    }
+  }
+}
+
+#socials {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 36px;
+  height: 36px;
+  border: 1px solid white;
+  border-radius: 18px;
+  background-color: transparent;
+  margin-bottom: 15px;
+
+  &:not(&:last-of-type) {
+    margin-right: 15px;
+  }
+}
